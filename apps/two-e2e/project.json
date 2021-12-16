@@ -1,0 +1,28 @@
+{
+  "root": "apps/two-e2e",
+  "sourceRoot": "apps/two-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/two-e2e/cypress.json",
+        "devServerTarget": "two:storybook"
+      },
+      "configurations": {
+        "ci": {
+          "devServerTarget": "two:storybook:ci"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/two-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["two"]
+}

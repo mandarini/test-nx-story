@@ -3,6 +3,7 @@
   "projects": {
     "one": "apps/one",
     "one-e2e": "apps/one-e2e",
-    "two": "libs/two"
+    "two": "libs/two",
+    "two-e2e": "apps/two-e2e"
   }
 }
