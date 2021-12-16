@@ -1,4 +1,8 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "one": "apps/one",
+    "one-e2e": "apps/one-e2e",
+    "two": "libs/two"
+  }
 }
